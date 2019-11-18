@@ -1,0 +1,37 @@
+ 
+<!--  -->
+<ion-content style="background-image: url('images/1_qYUvh-EtES8dtgKiBRiLsA.png');background-repeat: no-repeat;
+background-size:cover;"  >
+   
+   <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+
+ <!-- <div  id="map_canvas" style="height:100%;   "> -->
+  <button style="background-color: transparent;color: black;" ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <br><br>
+ <ion-row (tap)="search()"  style="
+  margin-left: 16px;
+ margin-right: 16px;
+ 
+ background-color: white;border-radius: 100px;">
+<ion-col col-2 style="    text-align: center;
+">
+   <img  src="images/loc.png" style="height: 20px;margin-top: 10px;  ">
+
+</ion-col>
+  <ion-col >
+               <!-- <ion-searchbar (ionBlur)="hide()" (tap)="searchmodal()"  showCancelButton="focus" placeholder="Enter Pickup"></ion-searchbar> -->
+               <button ion-button clear style="font-size: 15px; font-weight: bold;  color: black;       font-weight: 100;background-color: #ffffff;"> 
+                  Enter Pickup</button>   
+ 
+             </ion-col>
+             <ion-col col-1>
+                 <ion-icon style="margin-top: 5px;    color: #1a7fc3;" ios="ios-arrow-forward-outline" md="ios-arrow-forward-outline"></ion-icon>
+             
+              </ion-col>   
+
+</ion-row>
+<!-- </div>  -->
+
+</ion-content>

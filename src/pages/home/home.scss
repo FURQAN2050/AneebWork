@@ -1,0 +1,36 @@
+page-home {
+    .toolbar-background-md{
+        background: transparent;
+    }
+    .toolbar-background-ios{
+        background: transparent;
+    }
+    // .content-md{
+    //     background-image: url('images/1_qYUvh-EtES8dtgKiBRiLsA.png');
+    //     background-position: initial;
+    // }
+    ion-icon {
+        display: inline-block;
+        font-size: 2.2em;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+    .header-ios .toolbar-background-ios{
+        border-color: transparent;
+    }
+    .button-ios{
+        height: 2.2em;
+    }
+    #map_canvas {
+        height: 200px; //or any height
+    }
+    .bar-buttons-md{
+     background-color: transparent;
+
+    }
+    .button-md{
+        box-shadow:none;
+        -webkit-box-shadow:none;
+    }
+}

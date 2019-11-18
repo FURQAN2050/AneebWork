@@ -1,0 +1,27 @@
+page-select-location {
+    .searchbar-md .searchbar-input{
+        border-radius: 4px!important;
+        background-color: #dedede;
+    }
+    .card-md {
+        // margin: 10px;
+ border-radius: 7px;
+    }
+    .activated1{
+        background-color: #dedede !important;
+    }
+    .activated2{
+        font-size: 16px!important;
+        font-weight: bold;
+        color: #1a7fc3;
+    }
+    ion-card img {
+        display: inline;
+    }
+    .header-ios .toolbar-background-ios{
+        border-color: transparent;
+    }
+    .toolbar-background-ios{
+        background-color: transparent;
+    }
+}

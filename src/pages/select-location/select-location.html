@@ -1,0 +1,84 @@
+ 
+
+<ion-content >
+
+   <ion-row>
+     <ion-col col-1>
+        <img (tap)="back()" src="images/back_button-1.png" style="height: 14px;    margin-top: 10px;
+;">
+     </ion-col>
+      <ion-col col-1 style="text-align: right;">
+          <img  src="images/loc.png" style="height: 20px;margin-top: 10px;  ">
+
+      </ion-col>
+   <ion-col>
+     <ion-input  placeholder="Enter Pickup" style="   border-radius: 4px!important;
+     background-color: #dedede;">
+
+     </ion-input>
+      <!-- <ion-searchbar searchIcon='none' (ionBlur)="hide()" (tap)="searchmodal()" style="border-radius: 4px;width: 100%" showCancelButton="focus" placeholder="Search product"></ion-searchbar> -->
+
+   </ion-col>
+  </ion-row> 
+  <ion-row>
+      <ion-col col-2 style="text-align: right;">
+          <img  src="images/locb.png" style="height: 20px;margin-top: 10px;  ">
+
+      </ion-col>
+   <ion-col>
+     <ion-input  placeholder="Enter Drop Off" style="   border-radius: 4px!important;
+     background-color: #dedede;">
+
+     </ion-input>
+      <!-- <ion-searchbar searchIcon='none' (ionBlur)="hide()" (tap)="searchmodal()" style="border-radius: 4px;width: 100%" showCancelButton="focus" placeholder="Search product"></ion-searchbar> -->
+
+   </ion-col>
+  </ion-row> 
+  <ion-row>
+    
+   <ion-col>
+      <ion-label  style="  margin-bottom: 0px;  text-align: center;  font-size: 12px;     font-weight: bold;      color: #181818" class="label label-ios">What load size do you want to be delivered?</ion-label>
+
+   </ion-col>
+  </ion-row> 
+  <ion-grid>
+    <ion-card style="border: 1px solid #1675c1;">
+     <ion-row>
+  
+      <ion-col style="text-align: center;" col-12 (tap)="change('small')" [class.activated1]="selected == 'small'" >
+        
+              <img  src="images/small.jpg" style="height: 60px;    width: 60px;">
+              <ion-label [class.activated2]="selected == 'small'" style=" font-weight: 500;   text-align: center;  font-size: 12px; color: #000000" class="label label-ios">Small</ion-label>
+        
+      </ion-col>
+      <ion-col style="text-align: center;"  col-12 (tap)="change('medium')" [class.activated1]="selected == 'medium'">
+        
+          <img src="images/medium.jpg" style="height: 60px;    width: 60px;">
+          <ion-label  [class.activated2]="selected == 'medium'" style="font-weight: 500;text-align: center;  font-size: 12px; color: #000000" class="label label-ios">Medium</ion-label>
+    
+  </ion-col>
+  <ion-col style="text-align: center;" col-12  (tap)="change('large')" [class.activated1]="selected == 'large'">
+        
+      <img src="images/large.jpg" style="height: 60px;    width: 60px;">
+      <ion-label [class.activated2]="selected == 'large'" style=" font-weight: 500;   text-align: center;  font-size: 12px; color: #000000" class="label label-ios">Large</ion-label>
+
+</ion-col>
+     </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- <ion-row>
+    
+      <ion-col col-4>
+   
+      </ion-col>
+     </ion-row>  -->
+</ion-content>
+<ion-footer>
+    <ion-row>
+    
+        <ion-col style="padding: 0px;">
+
+          <button (tap)="next()" ion-button full style="">Next</button>
+        </ion-col>
+       </ion-row> 
+</ion-footer>
